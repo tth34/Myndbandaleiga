@@ -1,0 +1,24 @@
+$max-width: 1200px;
+$gutter: 20px;
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
+html {
+  box-sizing: border-box;
+  margin: $gutter;
+  background: rgba(0,0,0,0.8);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.5; }
+
+  img {
+    max-width: 100%; }
+
+  main {
+    overflow-x: hidden; }
+
+@import "index.scss";
