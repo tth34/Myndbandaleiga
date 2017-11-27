@@ -1,9 +1,41 @@
 .listi {
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
-}
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem; }
+
+.listi--content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
 
 hr {
   margin-right: 5rem;
   margin-left: 5rem;
-  border-top: 1px solid thin #eee; }
+  border-top: 1px solid #eee;
+  border-width: thin; }
+
+.fyrirsogn {
+  display: flex;
+  font-weight: bold; }
+
+.posted {
+  font-size: 0.8rem; }
+
+.myndband--controls {
+  width: 70%;
+  display: flex;
+
+}
+
+button {
+  height: 100%;
+  border-radius: 10px;
+  width: 60px;
+  background: transparent;
+  border: none;
+}
+
+svg {
+  width: 70%;
+  height: 100%;
+}
