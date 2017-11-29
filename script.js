@@ -68,7 +68,7 @@ class Myndbandaleiga {
     newDiv.appendChild(newVid);
     newP = document.createElement('p');
     newP.classList.add('bottomright');
-    newTextP = document.createTextNode(this.calculateTime(data.videos[0].duration));
+    newTextP = document.createTextNode(this.calculateTime(data.videos[1].duration));
     newP.appendChild(newTextP);
     newDiv.appendChild(newP);
     newSrc = document.createElement('source');
@@ -136,7 +136,7 @@ class Myndbandaleiga {
     newDiv.appendChild(newVid);
     newP = document.createElement('p');
     newP.classList.add('bottomright');
-    newTextP = document.createTextNode(this.calculateTime(data.videos[0].duration));
+    newTextP = document.createTextNode(this.calculateTime(data.videos[2].duration));
     newP.appendChild(newTextP);
     newDiv.appendChild(newP);
     newSrc = document.createElement('source');
@@ -164,7 +164,7 @@ class Myndbandaleiga {
     newDiv.appendChild(newVid);
     newP = document.createElement('p');
     newP.classList.add('bottomright');
-    newTextP = document.createTextNode(this.calculateTime(data.videos[0].duration));
+    newTextP = document.createTextNode(this.calculateTime(data.videos[3].duration));
     newP.appendChild(newTextP);
     newDiv.appendChild(newP);
     newSrc = document.createElement('source');
@@ -204,7 +204,7 @@ class Myndbandaleiga {
     newDiv.appendChild(newVid);
     newP = document.createElement('p');
     newP.classList.add('bottomright');
-    newTextP = document.createTextNode(this.calculateTime(data.videos[0].duration));
+    newTextP = document.createTextNode(this.calculateTime(data.videos[1].duration));
     newP.appendChild(newTextP);
     newDiv.appendChild(newP);
     newSrc = document.createElement('source');
@@ -231,7 +231,7 @@ class Myndbandaleiga {
     newDiv.appendChild(newVid);
     newP = document.createElement('p');
     newP.classList.add('bottomright');
-    newTextP = document.createTextNode(this.calculateTime(data.videos[0].duration));
+    newTextP = document.createTextNode(this.calculateTime(data.videos[2].duration));
     newP.appendChild(newTextP);
     newDiv.appendChild(newP);
     newSrc = document.createElement('source');
@@ -259,7 +259,7 @@ class Myndbandaleiga {
     newDiv.appendChild(newVid);
     newP = document.createElement('p');
     newP.classList.add('bottomright');
-    newTextP = document.createTextNode(this.calculateTime(data.videos[0].duration));
+    newTextP = document.createTextNode(this.calculateTime(data.videos[3].duration));
     newP.appendChild(newTextP);
     newDiv.appendChild(newP);
     newSrc = document.createElement('source');
@@ -286,7 +286,7 @@ class Myndbandaleiga {
   submit() {
     const newForm = document.createElement('form');
     newForm.id = 'formid';
-    newForm.action = '/video.html';
+    newForm.action = '/isi6/Vefforritun1/StortVerkefni2/';
     const newInput = document.createElement('input');
     newInput.type = 'hidden';
     newInput.name = 'id';
