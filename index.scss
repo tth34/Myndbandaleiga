@@ -1,41 +1,144 @@
 .listi {
   padding-top: 1.5rem;
-  padding-bottom: 1.5rem; }
+  padding-bottom: 1.5rem;
+}
+
+h1 { /* stylelint-disable-line */
+  margin-bottom: -2rem;
+  text-align: center;
+}
+
+header h1 { /* stylelint-disable-line */
+  margin-bottom: -1rem;
+  text-align: left;
+}
+
+.listi h1 { /* stylelint-disable-line */
+  margin-bottom: -3rem;
+  text-align: left;
+}
+
+h2 { /* stylelint-disable-line */
+  margin-top: 15rem;
+  text-align: center;
+}
 
 .listi--content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+}
 
-hr {
+.listi--content video { /* stylelint-disable-line */
+  margin-top: -3rem;
+}
+
+hr { /* stylelint-disable-line */
   margin-right: 5rem;
   margin-left: 5rem;
+  border-width: thin;
   border-top: 1px solid #eee;
-  border-width: thin; }
+}
+
+.myndband p {/* stylelint-disable-line */
+  position: relative;
+  bottom: 160px;
+  left: 430px;
+  width: 7%;
+  padding: 0.3rem;
+  font-size: 0.7rem;
+  background: rgba(0, 0, 0, 0.5);
+}
 
 .fyrirsogn {
   display: flex;
-  font-weight: bold; }
+  margin-top: -8rem;
+  font-weight: bold;
+}
 
 .posted {
-  font-size: 0.8rem; }
+  font-size: 0.8rem;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .myndband--controls {
-  width: 70%;
+  position: relative;
   display: flex;
-
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
-button {
-  height: 100%;
-  border-radius: 10px;
-  width: 60px;
+#divid1 { /* stylelint-disable-line */
+  display: flex;
+}
+
+input { /* stylelint-disable-line */
+  display: flex;
+  width: 70px;
+  height: auto;
+  padding-right: 1rem;
+}
+
+.player #playmid { /* stylelint-disable-line */
+  position: relative;
+  bottom: 450px;
+}
+
+.Bakktakki {
+  position: relative;
+  margin-top: 6rem;
+  font-weight: bold;
+  color: #fff;
   background: transparent;
-  border: none;
+  border: none; /* stylelint-disable-line */
 }
 
-svg {
-  width: 70%;
-  height: 100%;
+.Bakktakki2 {
+  position: relative;
+  top: 350px;
+  left: 150px;
+  padding: 0;
+  font-weight: bold;
+  color: #fff;
+  background: transparent;
+  border: none; /* stylelint-disable-line */
+}
+
+@media (min-width: 300px) {
+  .player video { /* stylelint-disable-line */
+    width: 485px;
+  }
+
+  .Bakktakki {
+    bottom: 200px;
+  }
+
+  .myndband--controls {
+    bottom: 160px;
+  }
+
+  .player #playmid {
+    bottom: 400px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .player video { /* stylelint-disable-line */
+    width: 950px;
+  }
+
+  .myndband--controls {
+    bottom: 50px;
+  }
+
+  .Bakktakki {
+    bottom: 100px;
+  }
 }

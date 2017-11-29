@@ -1,32 +1,30 @@
 {
-  "name": "Myndbandaleiga",
+  "name": "StortVerkefni2",
   "version": "1.0.0",
-  "description": "Stórt verkefni 2 í vefforritun",
-  "main": "index.js",
+  "description": "",
+  "main": "scripts.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "browser-sync": "browser-sync start --server --files index.html styles.css",
-    "sass": "node-sass styles.scss styles.css -w",
-    "dev": "npm-run-all --parallel sass browser-sync",
-    "lint": "stylelint *.scss scss/*.scss --syntax scss"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tth34/Myndbandaleiga.git"
+    "eslint": "eslint script.js",
+    "stylelint": "stylelint *.scss scss/*.scss --syntax scss",
+    "lint": "npm-run-all --parallel eslint stylelint",
+    "babel": "babel script.js --watch --out-file script-compiled.js --source-maps",
+    "browser-sync": "browser-sync start --server --files index.html styles.css script-compiled.js",
+    "sass": "node-sass --source-map-embed --watch styles.scss styles.css",
+    "dev": "npm-run-all --parallel sass babel browser-sync"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tth34/Myndbandaleiga/issues"
-  },
-  "homepage": "https://github.com/tth34/Myndbandaleiga#readme",
   "devDependencies": {
-    "browser-sync": "^2.18.13",
-    "npm-run-all": "^4.1.1",
-    "stylelint": "^8.2.0",
-    "stylelint-config-primer": "^2.1.0"
-  },
-  "dependencies": {
-    "node-sass": "^4.7.2"
+    "babel-cli": "6.26.0",
+    "babel-eslint": "8.0.1",
+    "babel-preset-env": "1.6.1",
+    "browser-sync": "2.18.13",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-plugin-import": "2.8.0",
+    "node-sass": "4.5.3",
+    "npm-run-all": "4.1.1",
+    "stylelint": "8.1.1",
+    "stylelint-config-primer": "2.0.1"
   }
 }

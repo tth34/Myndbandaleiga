@@ -1,24 +1,36 @@
 $max-width: 1200px;
 $gutter: 20px;
 
-*, *:before, *:after {
+*,
+*::before,
+*::after { /* stylelint-disable-line */
   box-sizing: inherit;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
-html {
+html { /* stylelint-disable-line */
+  display: flex;
   box-sizing: border-box;
   margin: $gutter;
-  background: rgba(0,0,0,0.8);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif; /* stylelint-disable-line */
   font-size: 16px;
-  color: #ffffff;
-  line-height: 1.5; }
+  line-height: 1.5;
+  color: #ffff;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+}
 
-  img {
-    max-width: 100%; }
+img { /* stylelint-disable-line */
+  max-width: 100%;
+}
 
-  main {
-    overflow-x: hidden; }
+main { /* stylelint-disable-line */
+  display: flex;
+  max-width: 1100px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  flex-direction: column;
+}
 
 @import "index.scss";
